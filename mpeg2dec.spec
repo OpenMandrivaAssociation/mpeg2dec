@@ -2,7 +2,7 @@
 %define release %mkrel 2
 %define name mpeg2dec
 %define major 0
-%define mdkversion		%(perl -pe '/(\\d+)\\.(\\d)\\.?(\\d)?/; $_="$1$2".($3||0)' /etc/mandrake-release)
+%define mdkversion		%(perl -pe '/(\\d+)\\.(\\d)\\.?(\\d)?/; $_="$1$2".($3||0)' /etc/mandriva-release)
 %if %mdkversion >= 910
 %define libname %mklibname %name %major
 %else

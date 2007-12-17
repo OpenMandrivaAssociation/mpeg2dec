@@ -19,7 +19,6 @@ Source0:	http://libmpeg2.sourceforge.net/files/%{name}-%{version}.tar.bz2
 URL:		http://libmpeg2.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	libxv-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mpeg2dec is an mpeg-1 and mpeg-2 video decoder. It is purposely kept

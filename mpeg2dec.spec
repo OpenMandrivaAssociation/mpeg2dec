@@ -1,5 +1,5 @@
 %define version 0.4.1
-%define release %mkrel 5
+%define release %mkrel 6
 %define name mpeg2dec
 %define major 0
 %define mdkversion		%(perl -pe '/(\\d+)\\.(\\d)\\.?(\\d)?/; $_="$1$2".($3||0)' /etc/mandriva-release)

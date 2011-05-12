@@ -1,5 +1,5 @@
 %define version 0.5.1
-%define release %mkrel 5
+%define release %mkrel 6
 %define name mpeg2dec
 %define major 0
 %define libname %mklibname %name %major
@@ -18,6 +18,8 @@ URL:		http://libmpeg2.sourceforge.net/
 BuildRequires:	SDL-devel
 BuildRequires:	libxv-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+
+Patch0:		libmpeg2-0.5.1-gcc4.6.patch
 
 %description
 mpeg2dec is an mpeg-1 and mpeg-2 video decoder. It is purposely kept
@@ -75,6 +77,8 @@ MPEG-2 Decoder static libraries.
 
 %prep
 %setup -q -n %oname-%version
+
+%patch0 -p1
 
 %build
 %configure2_5x	--enable-shared \

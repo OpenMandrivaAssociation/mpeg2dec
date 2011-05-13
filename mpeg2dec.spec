@@ -1,5 +1,5 @@
 %define version 0.5.1
-%define release %mkrel 6
+%define release %mkrel 7
 %define name mpeg2dec
 %define major 0
 %define libname %mklibname %name %major

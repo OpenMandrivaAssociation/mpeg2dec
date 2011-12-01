@@ -89,7 +89,7 @@ MPEG-2 Decoder static libraries.
 %{make}
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %{makeinstall_std}
 
 %if %mdkversion < 200900
@@ -100,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)

@@ -92,13 +92,6 @@ MPEG-2 Decoder static libraries.
 rm -rf %{buildroot}
 %{makeinstall_std}
 
-%if %mdkversion < 200900
-%post -n %libname -p /sbin/ldconfig
-%endif
-%if %mdkversion < 200900
-%postun -n %libname -p /sbin/ldconfig
-%endif
-
 %clean
 rm -rf %{buildroot}
 
@@ -116,7 +109,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_includedir}/mpeg2dec
 %{_libdir}/lib*.so
-%{_libdir}/lib*.la
 %{_libdir}/pkgconfig/lib*.pc
 %files -n %staticname
 %defattr(-,root,root)

@@ -7,7 +7,7 @@
 Summary:	MPEG-2 Decoder
 Name:		mpeg2dec
 Version:	0.5.1
-Release:	12
+Release:	13
 License:	GPLv2+
 Group:		Video
 Url:		http://libmpeg2.sourceforge.net/

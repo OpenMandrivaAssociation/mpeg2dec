@@ -56,7 +56,9 @@ This package includes the development files for %{name}.
 %apply_patches
 
 %build
-%configure2_5x \
+export CFLAGS="%{optflags} -fPIC"
+export LDLAGS="%{ldflags} -fPIC"
+%configure \
 	--disable-static \
 	--enable-shared
 

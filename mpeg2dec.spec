@@ -53,7 +53,7 @@ This package includes the development files for %{name}.
 
 %prep
 %setup -qn lib%{oname}-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 export CFLAGS="%{optflags} -fPIC"

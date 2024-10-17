@@ -10,7 +10,7 @@ Version:	0.5.1
 Release:	30
 License:	GPLv2+
 Group:		Video
-Url:		http://libmpeg2.sourceforge.net/
+Url:		https://libmpeg2.sourceforge.net/
 Source0:	http://libmpeg2.sourceforge.net/files/lib%{oname}-%{version}.tar.gz
 Patch0:		libmpeg2-0.5.1-gcc4.6.patch
 BuildRequires:	pkgconfig(sdl)

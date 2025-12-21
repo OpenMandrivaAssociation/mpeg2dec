@@ -13,6 +13,11 @@ Group:		Video
 Url:		https://libmpeg2.sourceforge.net/
 Source0:	http://libmpeg2.sourceforge.net/files/lib%{oname}-%{version}.tar.gz
 Patch0:		libmpeg2-0.5.1-gcc4.6.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(sdl)
 BuildRequires:	pkgconfig(xv)
 
